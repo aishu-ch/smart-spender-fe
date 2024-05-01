@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { loginService } from "../../utilities/users-service";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function LoginForm({ setUser }) {
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
   });
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -15,14 +16,14 @@ function LoginForm({ setUser }) {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const user = await loginService(credentials);
       console.log(user);
-      //! setUser(user) -> from props
-      setUser(user);
-      if (user && !user.error) {
+      if (user !== null && user !== undefined) {
+        setUser(user);
         navigate("/home");
       } else {
         navigate("/login");
@@ -78,7 +79,12 @@ function LoginForm({ setUser }) {
           Sign In
         </button>
         <footer className="mt-10">
-          New to Smart Spender? <span className="text-black">Sign up here</span>
+          New to Smart Spender?{" "}
+          <span className="text-grey">
+            <Link to="/signup" className="underline">
+              Sign up here
+            </Link>
+          </span>
         </footer>
       </form>
     </div>
@@ -86,6 +92,3 @@ function LoginForm({ setUser }) {
 }
 
 export default LoginForm;
-// TODO
-// 1. add link to Signup Now
-// 2. amend CSS
