@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getUser } from "../../utilities/users-service";
-import Home from "../Home/Home";
-import CreateExpense from "../CreateExpense/CreateExpense";
-import History from "../History/History";
+import Home from "../HomePage/Home";
+import CreateExpense from "../CreateExpensePage/CreateExpensePage";
+import History from "../HistoryPage/HistoryPage";
 import NavBar from "../../components/NavBar/NavBar";
 import AuthPage from "../AuthPage/AuthPage";
 
