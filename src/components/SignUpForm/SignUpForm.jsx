@@ -54,7 +54,7 @@ function SignUpForm() {
             name="email"
             value={userData.email}
             onChange={handleChange}
-            className="shadow-sm border border-[#57ABD8] text-white text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
+            className="shadow-sm border border-[#57ABD8] text-black text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
             placeholder="name@gmail.com"
             required
           />
@@ -72,7 +72,7 @@ function SignUpForm() {
             name="username"
             value={userData.username}
             onChange={handleChange}
-            className="shadow-sm border border-[#57ABD8] text-white text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
+            className="shadow-sm border border-[#57ABD8] text-black text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
             required
           />
         </div>
@@ -89,7 +89,7 @@ function SignUpForm() {
             name="password"
             value={userData.password}
             onChange={handleChange}
-            className="shadow-sm border border-[#57ABD8] text-white text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
+            className="shadow-sm border border-[#57ABD8] text-black text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
             required
           />
         </div>
@@ -106,7 +106,7 @@ function SignUpForm() {
             name="repeat"
             value={userData.repeat}
             onChange={handleChange}
-            className="shadow-sm border border-[#57ABD8] text-white text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
+            className="shadow-sm border border-[#57ABD8] text-black text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
             required
           />
         </div>

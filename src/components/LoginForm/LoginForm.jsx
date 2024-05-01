@@ -51,7 +51,7 @@ function LoginForm({ setUser }) {
             name="username"
             value={credentials.username}
             onChange={handleChange}
-            className="shadow-sm border border-[#57ABD8] text-white text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
+            className="shadow-sm border border-[#57ABD8] text-black text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
             required
           />
         </div>
@@ -68,7 +68,7 @@ function LoginForm({ setUser }) {
             name="password"
             value={credentials.password}
             onChange={handleChange}
-            className="shadow-sm border border-[#57ABD8] text-white text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
+            className="shadow-sm border border-[#57ABD8] text-black text-sm rounded-lg focus:ring-[#57ABD8] focus:border-[#57ABD8] block w-full p-2.5"
             required
           />
         </div>
