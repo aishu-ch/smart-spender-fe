@@ -32,7 +32,7 @@ SmartSpender App is designed to transform the way you manage your shared expense
 
 ## Deployment
 
-SmartSpender App is deployed on [Render](https://render.com/) for the back-end and [Vercel](https://vercel.com/) for the front-end. You can access it [here](https://smart-spender.vercel.com/).
+SmartSpender App is deployed on [Render](https://render.com/) for the back-end and [Vercel](https://vercel.com/) for the front-end. You can access it [here](https://smart-spender.vercel.app/).
 
 ## Technologies Used
 
